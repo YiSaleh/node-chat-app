@@ -24,9 +24,9 @@ server.listen(port, () => {
     console.log(`app is running on ${port}`);
 });
 
-fs.readFile(FILE_LOCATION, function (err, data) {
-    if (err) throw err;
-    if(data.includes('hello')){
-     console.log(data)
-    }
-  });
+// fs.readFile(FILE_LOCATION, function (err, data) {
+//     if (err) throw err;
+//     if(data.includes('hello')){
+//      console.log(data)
+//     }
+//   });
