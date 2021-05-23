@@ -23,7 +23,7 @@ io.on('connection', (socket) => {
 server.listen(port, () => {
     console.log(`app is running on ${port}`);
 });
-
+console.log(e)
 // fs.readFile(FILE_LOCATION, function (err, data) {
 //     if (err) throw err;
 //     if(data.includes('hello')){

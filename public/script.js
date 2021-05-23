@@ -22,9 +22,11 @@ input.addEventListener('change',async () => {
         const lines = file.split(/\r\n|\n/);
         textarea.value = lines.join('\n');
         file_data = e.currentTarget.result;
-        console.log(file_data);
+        // console.log(file_data);
+        xhttp.open("POST", "server.js", true);
+xhttp.send(e.currentTarget.result);
 
-        console.log('e -> ', e.currentTarget.result);
+        // console.log('e -> ', e.currentTarget.result);
     };
     console.log('hi');
     reader.onerror =  (e) => alert(e.target.error.name);
